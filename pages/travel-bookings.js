@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link"; // <-- Don't forget this!
 
 const affiliates = [
   {
@@ -68,14 +69,13 @@ export default function TravelBooking() {
               )}
               <h2 className="text-xl font-semibold mb-2 text-blue-700 text-center">{name}</h2>
               <p className="mb-4 text-center text-gray-700">{description}</p>
-              <Link href={url} passHref>
-                <a
-                  target="_blank"
-                  rel="noopener sponsored nofollow"
-                  className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 font-bold transition"
-                >
-                  Book Now
-                </a>
+              <Link
+                href={url}
+                target="_blank"
+                rel="noopener sponsored nofollow"
+                className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 font-bold transition"
+              >
+                Book Now
               </Link>
             </div>
           ))}
