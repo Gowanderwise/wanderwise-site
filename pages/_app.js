@@ -1,6 +1,10 @@
 // pages/_app.js
-import '../styles/globals.css'; // Adjust if your CSS file is named differently
+import '../styles/globals.css';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+function MyApp({ Component, pageProps })
+
+export default function App({ Component, pageProps }) 
+{
+  
 }
+export default MyApp;
